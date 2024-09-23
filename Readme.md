@@ -2,7 +2,7 @@
 
 - Студент: [Vladislav Kazmin](https://up.htmlacademy.ru/htmlcss-individual/2/user/1779445).
 - Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
-- Ссылка на сайт: [Проект Sedona](#).
+- Ссылка на сайт: [Проект Sedona](https://spikejnr.github.io/1779445-sedona-2/).
 
 ---
 
