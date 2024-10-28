@@ -117,23 +117,22 @@
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="control" for="pool" tabindex="-1">
+                    <label class="control" for="pool">
                       <input class="visually-hidden control-input" type="checkbox" name="pool" id="pool" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control" for="parking" tabindex="0">
-                      <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked
-                        tabindex="0">
-                      <span class="control-mark" tabindex="0"></span>
+                    <label class="control" for="parking">
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" id="parking" checked>
+                      <span class="control-mark"></span>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control" for="wi-fi" tabindex="0">
-                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi" id="wi-fi" tabindex="0">
+                    <label class="control" for="wi-fi">
+                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi" id="wi-fi">
                       <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
@@ -144,25 +143,25 @@
                 <legend class="filter-title">Тип Жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="control" for="hotel" tabindex="0">
+                    <label class="control" for="hotel">
                       <input class="visually-hidden control-input" type="radio" name="type-housing" value="hotel"
-                        id="hotel" checked tabindex="0">
+                        id="hotel" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control" for="motel" tabindex="0">
+                    <label class="control" for="motel">
                       <input class="visually-hidden control-input" type="radio" name="type-housing" value="motel"
-                        id="motel" tabindex="0">
+                        id="motel">
                       <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control" for="apartments" tabindex="0">
+                    <label class="control" for="apartments">
                       <input class="visually-hidden control-input" type="radio" name="type-housing" value="apartments"
-                        id="apartments" tabindex="0">
+                        id="apartments">
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
@@ -172,12 +171,16 @@
               <fieldset class="filter-price">
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="filter-input-wrapper">
-                  <input class="filter-input filter-input-left" type="number" placeholder="0" name="min-price"
-                    id="price-from">
-                  <label class="min-price" for="price-from">от</label>
-                  <input class="filter-input filter-input-right" type="number" placeholder="9000" name="max-price"
-                    id="price-to">
-                  <label class="max-price" for="price-to">до</label>
+                  <label class="min-price-label" for="price-from">
+                    <input class="filter-input filter-input-left" type="number" placeholder="0" name="min-price"
+                      id="price-from">
+                    <span class="min-price">от</span>
+                  </label>
+                  <label class="max-price-label" for="price-to">
+                    <input class="filter-input filter-input-right" type="number" placeholder="9000" name="max-price"
+                      id="price-to">
+                    <span class="max-price">до</span>
+                  </label>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar">
@@ -209,17 +212,17 @@
             </select>
             <ul class="catalog-dispalay-list">
               <li class="catalog-dispalay-item">
-                <a class="button-tile catalog-dispalay-button display-selected" href="#">
+                <a class="button-tile catalog-dispalay-button display-selected" href="catalog.html?view=tile">
                   <span class="visually-hidden">Плитками</span>
                 </a>
               </li>
               <li class="catalog-dispalay-item">
-                <a class="button-fullsize catalog-dispalay-button" href="#">
+                <a class="button-fullsize catalog-dispalay-button" href="catalog.html?view=card">
                   <span class="visually-hidden">Показать полноразмерные карточки</span>
                 </a>
               </li>
               <li class="catalog-dispalay-item">
-                <a class="button-list catalog-dispalay-button" href="#">
+                <a class="button-list catalog-dispalay-button" href="catalog.html?view=list">
                   <span class="visually-hidden">Показать списком</span>
                 </a>
               </li>
@@ -339,8 +342,8 @@
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-field">Email</label>
-            <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-field"
-              id="subscribe-field" required>
+            <input class="subscribe-field subscribe-field-catalog" placeholder="Ваш e-mail" type="email"
+              name="subscribe-field" id="subscribe-field" required>
             <button type="submit" class="subscribe-button button button-secondary button-large">Подписаться</button>
           </form>
         </section>
@@ -386,7 +389,7 @@
           </li>
         </ul>
         <a class="contacts-phone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
-        <a class="author-logo" href="https://htmlacademy.ru/">
+        <a class="author-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="academy-logo" role="img" aria-label="Логотип html-academy" xmlns="http://www.w3.org/2000/svg"
             width="115" height="34" fill="none">
             <path fill-rule="evenodd"
